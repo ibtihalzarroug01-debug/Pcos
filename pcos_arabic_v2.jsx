@@ -213,7 +213,7 @@ const DietCard=({type,isOpen,onToggle})=>(
 );
 
 /* ──────────────────── MAIN APP ──────────────────── */
-export default function PCOSApp(){
+function PCOSApp(){
   const [openType,setOpenType]=useState("insulin");
   const [openDiet,setOpenDiet]=useState("insulin");
   const [activeTab,setActiveTab]=useState("types");
@@ -554,4 +554,6 @@ export default function PCOSApp(){
       </div>
     </div>
   );
-}
+}ReactDOM.createRoot(document.getElementById('root')).render(
+  React.createElement(PCOSApp)
+);
